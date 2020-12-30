@@ -1,0 +1,6 @@
+name = "quicklytics_client"
+type = "javascript"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""

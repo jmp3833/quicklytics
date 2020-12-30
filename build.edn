@@ -1,0 +1,7 @@
+{:main quicklytics-client.core
+ :output-to "index.js"
+ :output-dir ""
+ :target :bundle
+ :bundle-cmd {:none ["npx" "webpack" "index.js" "-o" "out/wp.js" "--mode=development"]
+              :default ["npx" "webpack" "index.js" "-o" "out/wp.js"]}
+ :closure-defines {cljs.core/*global* "window"}} ;; needed for advanced
