@@ -1,10 +1,11 @@
-(ns quicklytics.core)
+(ns quicklytics.core
+  (:require [quicklytics.data :as db]))
 
 (defn fetch! [e] 
   (.respondWith 
 	e 
 	(js/Response. 
 	  "Hello Worker!" 
-	  (clj->js {:headers {:content-type "text/plain"}}))))
+	  {:headers {:content-type "text/plain"}})))
 
 (this-as this (.addEventListener this "fetch" fetch!))
