@@ -16,3 +16,5 @@ wrangler.toml
 out/
 index.js
 .cljs_node_repl/*
+node_modules/*
+.shadow-cljs/*
