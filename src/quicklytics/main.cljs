@@ -1,4 +1,4 @@
-(ns quicklytics.core
+(ns quicklytics.main
   (:require [quicklytics.data :as db]))
 
 (defn fetch! [e] 
@@ -8,4 +8,6 @@
 	  "Hello Worker!" 
 	  {:headers {:content-type "text/plain"}})))
 
-(this-as this (.addEventListener this "fetch" fetch!))
+(comment (this-as this (.addEventListener this "fetch" fetch!)))
+
+(defn main! [] (println "hello world"))

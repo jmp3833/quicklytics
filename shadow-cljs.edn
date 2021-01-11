@@ -1,0 +1,5 @@
+{:source-paths ["src"]
+ :dependencies []
+ :builds {:dev {:target :node-script
+                :output-to "index.js"
+                :main quicklytics.main/main!}}}

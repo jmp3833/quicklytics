@@ -1,6 +1,0 @@
-{:deps 
- {
-  org.clojure/clojurescript {:mvn/version "1.10.758"}
-  cljsjs/aws-sdk-js {:mvn/version "2.421.0-0"}
- }
-}
